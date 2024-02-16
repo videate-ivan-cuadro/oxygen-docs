@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="schedule_data_profile" class="- topic/topic task/task ">
+    <title class="- topic/title ">Schedule Data Profiling</title>
+    <shortdesc class="- topic/shortdesc ">Scheduling is optional. You can schedule a profile to run
+            <!--<uicontrol>Hourly</uicontrol>, --><uicontrol class="+ topic/ph ui-d/uicontrol ">Daily</uicontrol>,
+            <uicontrol class="+ topic/ph ui-d/uicontrol ">Weekly</uicontrol>, or <uicontrol class="+ topic/ph ui-d/uicontrol ">Monthly</uicontrol>. Scheduling helps you
+        to identify trends and generate alerts for data anomalies.</shortdesc>
+    <prolog class="- topic/prolog ">
+        <metadata class="- topic/metadata ">
+       <othermeta name="Product" content="Data_Observability" otherprops="taxonomy" props="Data Observability" class="- topic/othermeta "/>
+            <othermeta name="Topic Type" content="How_Do_I..." otherprops="taxonomy" props="How Do I..." class="- topic/othermeta "/>
+       
+        </metadata>
+    </prolog>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">Scheduling is a final step in profile creation. You can schedule your profile run
+            to analyze your data assets over time.<note id="note_dkl_nbm_1tb" class="- topic/note ">The schedule is OFF by
+                default during profile creation.</note><note id="note_yxz_ybm_1tb" type="important" class="- topic/note ">The schedule is set up in GMT format.</note><p class="- topic/p ">To schedule a data
+            profile:</p></context>
+        <steps id="steps_jf5_tdg_rsb" class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Enable Schedule</uicontrol> toggle button to turn it
+                    ON.</cmd>
+            </step>
+            <step id="schedule" class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Select the <uicontrol class="+ topic/ph ui-d/uicontrol ">Occurrence</uicontrol> of scheduling.</cmd>
+                <choicetable frame="all" id="choicetable_kxn_zmj_nsb" relcolwidth="1.0* 4.63*" class="- topic/simpletable task/choicetable ">
+                    <chhead class="- topic/sthead task/chhead ">
+                        <choptionhd class="- topic/stentry task/choptionhd ">Occurrence</choptionhd>
+                        <chdeschd class="- topic/stentry task/chdeschd ">Description</chdeschd>
+                    </chhead>
+                    <!--<chrow>
+                        <choption>Hourly</choption>
+                        <chdesc>Specifies settings for a profile to run after every hour.<dl
+                                id="dl_chb_b4j_nsb">
+                                <dlentry>
+                                    <dt>Every</dt>
+                                    <dd>The profiling will run for every selected hour. Allowed
+                                        values are between 1 and 24.</dd>
+                                </dlentry>
+                            </dl><dl id="dl_nwd_d4j_nsb">
+                                <dlentry>
+                                    <dt>from</dt>
+                                    <dd>The date when the scheduling starts.</dd>
+                                </dlentry>
+                            </dl><dl id="dl_xyt_nqn_psb">
+                                <dlentry>
+                                    <dt>Example:</dt>
+                                    <dd>If the schedule is selected for <b>Every</b> 2 hours
+                                            <b>from</b><i> <selected date></i>, then profiling
+                                        run will start from the <i><selected date></i> and run
+                                        for every 2 hours in a day.</dd>
+                                </dlentry>
+                            </dl></chdesc>
+                    </chrow>-->
+                    <chrow class="- topic/strow task/chrow ">
+                        <choption class="- topic/stentry task/choption ">Daily</choption>
+                        <chdesc class="- topic/stentry task/chdesc ">Specifies settings for the scheduler to run every day.<dl id="dl_fws_l4j_nsb" class="- topic/dl ">
+                                <dlentry class="- topic/dlentry ">
+                                    <dt class="- topic/dt ">At</dt>
+                                    <dd class="- topic/dd ">The time at which scheduling starts (hh:mm).<note id="note_jq4_5bm_1tb" class="- topic/note ">The scheduler uses a 12-hour time
+                                            format and shows the default system time during
+                                            selection.</note></dd>
+                                </dlentry>
+                                <dlentry class="- topic/dlentry ">
+                                    <dt class="- topic/dt ">Example:</dt>
+                                    <dd class="- topic/dd ">If the schedule is selected for daily <b class="+ topic/ph hi-d/b ">At</b>
+                                        <i class="+ topic/ph hi-d/i ">&lt;hh:mm&gt;</i>, then profiling will run daily at
+                                            <i class="+ topic/ph hi-d/i ">&lt;hh:mm&gt;</i>.</dd>
+                                </dlentry>
+                            </dl></chdesc>
+                    </chrow>
+                    <chrow class="- topic/strow task/chrow ">
+                        <choption class="- topic/stentry task/choption ">Weekly</choption>
+                        <chdesc class="- topic/stentry task/chdesc ">Specifies settings for the scheduler to run every seven days.<dl id="dl_twv_tpj_nsb" class="- topic/dl ">
+                                <dlentry class="- topic/dlentry ">
+                                    <dt class="- topic/dt ">On</dt>
+                                    <dd class="- topic/dd ">The day(s) in the week that profiling will run.</dd>
+                                </dlentry>
+                                <dlentry class="- topic/dlentry ">
+                                    <dt class="- topic/dt ">at</dt>
+                                    <dd class="- topic/dd ">The time at which scheduling starts (hh:mm).<note id="note_qjp_wbm_1tb" class="- topic/note ">The scheduler uses a 12-hour time
+                                            format and shows the default system time during
+                                            selection.</note></dd>
+                                </dlentry>
+                                <dlentry class="- topic/dlentry ">
+                                    <dt class="- topic/dt ">Example:</dt>
+                                    <dd class="- topic/dd ">If the schedule is selected <b class="+ topic/ph hi-d/b ">On</b>
+                                        <i class="+ topic/ph hi-d/i ">&lt;selected days&gt;</i> and <b class="+ topic/ph hi-d/b ">at</b>
+                                        <i class="+ topic/ph hi-d/i ">&lt;hh:mm&gt;</i>, then profiling will run on the
+                                            <i class="+ topic/ph hi-d/i ">&lt;selected days</i> at <i class="+ topic/ph hi-d/i ">&lt;hh:mm&gt;</i> for
+                                        every week.</dd>
+                                </dlentry>
+                            </dl></chdesc>
+                    </chrow>
+                    <chrow class="- topic/strow task/chrow ">
+                        <choption class="- topic/stentry task/choption ">Monthly</choption>
+                        <chdesc class="- topic/stentry task/chdesc ">Specifies settings for a profile to run every month.<dl id="dl_qpb_wpj_nsb" class="- topic/dl ">
+                                <dlentry class="- topic/dlentry ">
+                                    <dt class="- topic/dt ">The <i class="+ topic/ph hi-d/i "><userinput class="+ topic/ph sw-d/userinput ">&lt;date&gt;</userinput></i> of every
+                                        month at <i class="+ topic/ph hi-d/i "><userinput class="+ topic/ph sw-d/userinput ">&lt;time&gt;</userinput></i></dt>
+                                    <dd class="- topic/dd ">The profiling will run on the every selected date of the
+                                        month.</dd>
+                                </dlentry>
+                                <dlentry class="- topic/dlentry ">
+                                    <dt class="- topic/dt ">Example:</dt>
+                                    <dd class="- topic/dd ">If the schedule is selected as <uicontrol class="+ topic/ph ui-d/uicontrol ">The</uicontrol>
+                                        <userinput class="+ topic/ph sw-d/userinput ">12</userinput>
+                                        <uicontrol class="+ topic/ph ui-d/uicontrol ">of every month</uicontrol> at <userinput class="+ topic/ph sw-d/userinput ">11:00
+                                            AM</userinput>, then profiling run will happen on every
+                                        12th of the month at 11:00 AM.</dd>
+                                </dlentry>
+                            </dl><p class="- topic/p "/><dl id="dl_vv3_5pw_pxb" class="- topic/dl ">
+                                <dlentry class="- topic/dlentry ">
+                                    <dt class="- topic/dt ">The <i class="+ topic/ph hi-d/i "><userinput class="+ topic/ph sw-d/userinput ">&lt;first or last&gt;</userinput></i>
+                                        <i class="+ topic/ph hi-d/i "><userinput class="+ topic/ph sw-d/userinput ">&lt;day&gt;</userinput></i> of every month at
+                                                <i class="+ topic/ph hi-d/i "><userinput class="+ topic/ph sw-d/userinput ">&lt;time&gt;</userinput></i></dt>
+                                    <dd class="- topic/dd ">The profiling will run on the selected date of the
+                                        month.</dd>
+                                </dlentry>
+                                <dlentry class="- topic/dlentry ">
+                                    <dt class="- topic/dt ">Example:</dt>
+                                    <dd class="- topic/dd ">If the schedule is selected for The
+                                            <userinput class="+ topic/ph sw-d/userinput ">first</userinput>
+                                        <userinput class="+ topic/ph sw-d/userinput ">Wednesday</userinput> of every month at
+                                            <userinput class="+ topic/ph sw-d/userinput ">11:00 AM</userinput>, then profiling run will
+                                        happen on the <i class="+ topic/ph hi-d/i ">first Wednesday</i> of every month at 11:00
+                                        AM.</dd>
+                                </dlentry>
+                            </dl><note id="note_qnp_zfx_pxb" class="- topic/note ">The scheduler uses a 12-hour time
+                                format and shows the default system time during
+                            selection.</note></chdesc>
+                    </chrow>
+                </choicetable>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol> to save the profile.</cmd>
+                <stepresult class="- topic/itemgroup task/stepresult ">The profile is saved and will run as per the selected schedule. You are
+                    redirected to the <wintitle class="+ topic/keyword ui-d/wintitle ">Data Profiles</wintitle> page.<note id="note_rb5_bpj_nsb" class="- topic/note ">You can click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save &amp; Run</uicontrol> to
+                        save and quickly run profiling. The profile will run as per the selected
+                        schedule settings.</note></stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>
