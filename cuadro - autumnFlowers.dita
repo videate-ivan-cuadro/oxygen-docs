@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="autumnFlowers">
     <title>Autumn Flowers</title>
-    <?videate <start_processing/> ?>
+    <?videate  <click selector="ref://70zGzU" info1="xpath://h4[.='Spiel details']" info2="Spiel details"/>?>
     <conbody>
         <p>Autumn is the season of the primary harvest. Autumn falls during September - November in
             the Northern hemisphere, and during March - June in the Southern hemisphere. Crops are
